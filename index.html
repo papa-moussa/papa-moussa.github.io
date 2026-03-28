@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV de Papa Moussa Diallo - Développeur Fullstack Java / Angular spécialisé en Finance de marché et Enterprise." />
   <title>Papa Moussa Diallo — CV</title>
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
@@ -487,18 +488,56 @@
     }
 
     @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
       body {
         padding: 0;
-        background: #fff
+        background: #fff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .lang-switch {
-        display: none
+        display: none;
       }
 
       .page {
         box-shadow: none;
-        width: 100%
+        width: 100%;
+        zoom: 0.94; /* Ajustement d'échelle pour forcer sur une page */
+      }
+
+      /* Réduction des marges internes pour dégager de l'espace vertical */
+      .header {
+        padding: 26px 40px 20px;
+      }
+
+      .main {
+        padding: 24px 36px 20px 40px;
+        gap: 16px;
+      }
+
+      .aside {
+        padding: 24px 24px 20px;
+      }
+
+      .exp {
+        margin-bottom: 14px;
+      }
+
+      .aside-section {
+        padding: 12px 0;
+      }
+
+      .profile-txt {
+        line-height: 1.6;
+      }
+
+      .exp-ul li {
+        line-height: 1.5;
       }
     }
 
@@ -671,8 +710,8 @@
         <div class="h-contact"><span class="ic">✉</span><a href="mailto:pamodiallo@gmail.com">pamodiallo@gmail.com</a>
         </div>
         <div class="h-contact"><span class="ic">📍</span>Dakar, Sénégal</div>
-        <div class="h-contact"><span class="ic">🔗</span><a href="#">github.com/pamodiallo</a></div>
-        <div class="h-contact"><span class="ic">in</span><a href="#">linkedin.com/in/pamodiallo</a></div>
+        <div class="h-contact"><span class="ic">🔗</span><a href="https://github.com/papa-moussa" target="_blank">github.com/papa-moussa</a></div>
+        <div class="h-contact"><span class="ic">in</span><a href="https://www.linkedin.com/in/papa-moussa-diallo" target="_blank">linkedin.com/in/papa-moussa-diallo</a></div>
       </div>
     </header>
 
@@ -701,10 +740,22 @@
                 Income, core-banking et gestion d'assurances</li>
               <li id="e1-2">Intégration de flux financiers SWIFT et conformité à la norme <b>ISO 20022</b> pour les
                 échanges interbancaires</li>
-              <li id="e1-3">Conception de services RESTful sécurisés (Spring Security, JWT) — <b>réduction du temps de
-                  traitement de ~35%</b></li>
-              <li id="e1-4">Pipeline CI/CD Docker/Jenkins — <b>déploiements 40% plus rapides</b></li>
-              <li id="e1-5">Optimisation JPA/Hibernate sur volumes de données financières — <b>gain moyen ~25%</b></li>
+              <li id="e1-3">Conception de services RESTful sécurisés (Spring Security, JWT)</li>
+              <li id="e1-4">Pipeline CI/CD Docker/Jenkins</li>
+              <li id="e1-5">Optimisation JPA/Hibernate sur volumes de données financières</li>
+              <li id="e1-stack"></li>
+            </ul>
+          </div>
+
+          <div class="exp">
+            <div class="exp-top">
+              <div class="exp-role" id="role-proj">Projets Académiques & Personnels</div>
+              <div class="exp-period">2019 — 2022</div>
+            </div>
+            <div class="exp-co" id="co-proj">Master Sécurité Informatique - UCAD</div>
+            <ul class="exp-ul">
+              <li id="e-proj-1">Mise en pratique approfondie des architectures backend et de la sécurité des API</li>
+              <li id="e-proj-2">Développement d'applications Fullstack (Java/Angular) et mise en place de flux sécurisés</li>
             </ul>
           </div>
 
@@ -741,23 +792,7 @@
                 <div class="dot on"></div>
               </div>
             </div>
-            <div class="sk-row"><span class="sk-name">Spring Security</span>
-              <div class="dots">
-                <div class="dot on"></div>
-                <div class="dot on"></div>
-                <div class="dot on"></div>
-                <div class="dot on"></div>
-              </div>
-            </div>
             <div class="sk-row"><span class="sk-name">PostgreSQL / SQL</span>
-              <div class="dots">
-                <div class="dot on"></div>
-                <div class="dot on"></div>
-                <div class="dot on"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="sk-row"><span class="sk-name">JPA / Hibernate</span>
               <div class="dots">
                 <div class="dot on"></div>
                 <div class="dot on"></div>
@@ -797,7 +832,7 @@
                 <div class="dot on"></div>
               </div>
             </div>
-            <div class="sk-row"><span class="sk-name">HTML / CSS</span>
+            <div class="sk-row"><span class="sk-name">Ionic</span>
               <div class="dots">
                 <div class="dot on"></div>
                 <div class="dot on"></div>
@@ -824,13 +859,6 @@
               <div class="edu-sch">Université du Sahel</div>
             </div>
           </div>
-          <div class="edu-item">
-            <div class="edu-yr">2016</div>
-            <div>
-              <div class="edu-deg" id="deg3">Baccalauréat Scientifique</div>
-              <div class="edu-sch">Lycée Gestu Xam Xam</div>
-            </div>
-          </div>
         </section>
 
       </main>
@@ -848,7 +876,6 @@
             <span class="tag">ISO 20022</span>
             <span class="tag" id="t-risk">Gestion du risque</span>
             <span class="tag" id="t-rep">Reporting fin.</span>
-            <span class="tag">UEMOA / BCEAO</span>
           </div>
         </div>
 
@@ -909,8 +936,7 @@
             <div class="interest-item"><span class="interest-ic">📖</span><span id="i2">Veille technologique</span>
             </div>
             <div class="interest-item"><span class="interest-ic">🎮</span><span id="i3">Jeux vidéo</span></div>
-            <div class="interest-item"><span class="interest-ic">✈️</span><span id="i4">Voyages</span></div>
-            <div class="interest-item"><span class="interest-ic">🎵</span><span id="i5">Musique</span></div>
+            <div class="interest-item"><span class="interest-ic">🎵</span><span id="i4">Musique</span></div>
           </div>
         </div>
 
@@ -927,9 +953,13 @@
         role1: "Développeur Fullstack", period1: "2023 — présent",
         "e1-1": "Développement de modules métier Angular/Spring Boot sur des domaines variés : ALM, Fixed Income, core-banking et gestion d'assurances",
         "e1-2": "Intégration de flux financiers SWIFT et conformité à la norme <b>ISO 20022</b> pour les échanges interbancaires",
-        "e1-3": "Conception de services RESTful sécurisés (Spring Security, JWT) — <b>réduction du temps de traitement de ~35%</b>",
-        "e1-4": "Pipeline CI/CD Docker/Jenkins — <b>déploiements 40% plus rapides</b>",
-        "e1-5": "Optimisation JPA/Hibernate sur volumes de données financières — <b>gain moyen ~25%</b>",
+        "e1-3": "Conception de services RESTful sécurisés (Spring Security, JWT)",
+        "e1-4": "Pipeline CI/CD Docker/Jenkins",
+        "e1-5": "Optimisation JPA/Hibernate réduisant sensiblement les temps de requêtes",
+        "e1-stack": "<b>Stack :</b> Java, Spring Boot, Angular, PostgreSQL, Jenkins, Docker",
+        "role-proj": "Projets Académiques & Personnels", "co-proj": "Master Sécurité Informatique - UCAD",
+        "e-proj-1": "Mise en pratique approfondie des architectures backend et de la sécurité des API",
+        "e-proj-2": "Développement d'applications Fullstack (Java/Angular) et mise en place de flux sécurisés",
         role2: "Stagiaire Développeur Web", co2: "ANSD — Agence Nationale de la Statistique",
         "e2-1": "Développement d'une page web pour l'annuaire statistique national",
         "e2-2": "Administration et mise à jour de la plateforme Open Data",
@@ -941,7 +971,7 @@
         "a-soft": "Soft Skills",
         ss1: "Autonomie", ss2: "Rigueur", ss3: "Esprit d'équipe", ss4: "Adaptabilité", ss5: "Curiosité", ss6: "Communication", ss7: "Force de proposition",
         "a-int": "Centres d'intérêt",
-        i1: "Football", i2: "Veille technologique", i3: "Jeux vidéo", i4: "Voyages", i5: "Musique"
+        i1: "Football", i2: "Veille technologique", i3: "Jeux vidéo", i4: "Musique"
       },
       en: {
         role: "Fullstack Developer · Java / Angular · Finance &amp; Enterprise",
@@ -950,9 +980,13 @@
         role1: "Fullstack Developer", period1: "2023 — present",
         "e1-1": "Built Angular/Spring Boot business modules across multiple domains: ALM, Fixed Income, core-banking and insurance management",
         "e1-2": "Integrated SWIFT financial flows with <b>ISO 20022</b> compliance for interbank messaging",
-        "e1-3": "Designed secure RESTful services (Spring Security, JWT) — <b>~35% reduction in processing time</b>",
-        "e1-4": "Docker/Jenkins CI/CD pipeline — <b>40% faster deployments</b>",
-        "e1-5": "JPA/Hibernate optimization on financial datasets — <b>~25% average performance gain</b>",
+        "e1-3": "Designed secure RESTful services (Spring Security, JWT)",
+        "e1-4": "Docker/Jenkins CI/CD pipeline",
+        "e1-5": "JPA/Hibernate optimization reducing query times on large datasets",
+        "e1-stack": "<b>Stack:</b> Java, Spring Boot, Angular, PostgreSQL, Jenkins, Docker",
+        "role-proj": "Academic & Personal Projects", "co-proj": "Master's in Computer Security - UCAD",
+        "e-proj-1": "Advanced implementation of backend architectures and API security",
+        "e-proj-2": "Development of Fullstack applications and secure data flows",
         role2: "Web Developer Intern", co2: "ANSD — National Statistics Agency",
         "e2-1": "Developed a web page for the national statistical directory",
         "e2-2": "Administered and updated the Open Data platform",
@@ -964,7 +998,7 @@
         "a-soft": "Soft Skills",
         ss1: "Autonomy", ss2: "Rigor", ss3: "Teamwork", ss4: "Adaptability", ss5: "Curiosity", ss6: "Communication", ss7: "Proactiveness",
         "a-int": "Interests",
-        i1: "Football", i2: "Tech watch", i3: "Video games", i4: "Travel", i5: "Music"
+        i1: "Football", i2: "Tech watch", i3: "Video games", i4: "Music"
       }
     };
 
